@@ -8,7 +8,7 @@
 
 ## 📌 Overview
 
-The **ECHALLANPORTAL** is a lightweight Java-based web application designed to:
+The **ECHALLANPORTAL** is a Java-based web application designed to:
 
 🔐 Allow users to log in  
 🧾 Submit vehicle challan details  
