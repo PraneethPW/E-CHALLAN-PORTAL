@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login page</title>
+  <style>
+    .note {
+      color: green;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Success Note -->
+<p class="note">✅ Login Successful! Please enter the vehicle details below.</p>
+
+<form method='post' action='./save'>
+  <table>
+    <tr>
+      <th>NAME</th>
+      <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+      <th>VEHICLE NUMBER</th>
+      <td><input type="text" name="number"></td>
+    </tr>
+    <tr>
+      <th>VEHICLE TYPE</th>
+      <td>
+        <input list="vehicleTypes" name="vehicleType">
+        <datalist id="vehicleTypes">
+          <option value="Two Wheeler">
+          <option value="Four Wheeler">
+          <option value="Eight Wheeler">
+          <option value="Sixteen Wheeler">
+        </datalist>
+      </td>
+    </tr>
+    <tr>
+      <th>CHALLAN TYPE</th>
+      <td>
+        <input list="challanTypes" name="challanType">
+        <datalist id="challanTypes">
+          <option value="Signal Jumping">
+          <option value="No Helmet">
+          <option value="Over Speeding">
+          <option value="Drunk Driving">
+          <option value="Parking Violation">
+          <option value="Wrong Side Driving">
+        </datalist>
+      </td>
+    </tr>
+    <tr>
+      <th>FINE AMOUNT</th>
+      <td>
+        <input type="number" name="fineAmount" min="100" max="10000" step="50" required>
+      </td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><input type="submit" name="save" value="Submit"></td>
+    </tr>
+  </table>
+</form>
+
+<div class="link-section">
+  <p>If you want to <strong>check your previous challan details</strong>, click below:</p>
+  <a href="Retrieval.html">🔍 View Challan Details</a>
+</div>
+
+
+</body>
+</html>
